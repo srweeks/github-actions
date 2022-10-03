@@ -1,8 +1,6 @@
 name: Release
 on:
-  push: 
-    tags: 
-      - 'v*' 
+  release
 jobs:
   build:
     if: github.ref == 'refs/heads/main' 
