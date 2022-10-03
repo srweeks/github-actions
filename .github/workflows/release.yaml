@@ -1,0 +1,36 @@
+name: Release
+on:
+  push: 
+    tags: 
+      - 'v*' 
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main' 
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Store build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: archive
+          path: build/
+
+  deploy:
+    if: github.ref == 'refs/heads/main' 
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download build artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: archive 
+        path: build/
+    - name: Deploy Project Artifacts to Vercel
+      run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}

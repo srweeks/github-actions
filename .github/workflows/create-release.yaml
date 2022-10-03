@@ -1,0 +1,19 @@
+name: Create Release
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+on:
+  push: 
+    branches:
+      - main
+jobs:
+  generate-new-tag:
+    runs-on: ubuntu-latest
+    environment: Production 
+
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release 
+        with:
+          release-type: node
+          package-name: release-please-action
