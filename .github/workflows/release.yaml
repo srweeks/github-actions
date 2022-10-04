@@ -1,10 +1,12 @@
 name: Release
 on:
-  release
+  release:
+    types:
+      - published
 jobs:
-  build:
-    if: github.ref == 'refs/heads/main' 
-    environment: production
+  build:  
+    if: ${{ steps.release.outputs.release_created }}
+    needs: create-release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,8 +22,8 @@ jobs:
           name: archive
           path: build/
 
-  deploy:
-    if: github.ref == 'refs/heads/main' 
+  deploy:  
+    if: ${{ steps.release.outputs.release_created }}
     needs: build
     runs-on: ubuntu-latest
     steps:

@@ -6,7 +6,6 @@ on:
 jobs:
   generate-new-tag:
     runs-on: ubuntu-latest
-    environment: Production 
 
     steps:
       - uses: google-github-actions/release-please-action@v3
