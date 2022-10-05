@@ -5,7 +5,6 @@ on:
       - published
 jobs:
   build:  
-    if: ${{ steps.release.outputs.release_created }}
     needs: create-release
     runs-on: ubuntu-latest
     steps:
@@ -23,7 +22,7 @@ jobs:
           path: build/
 
   deploy:  
-    if: ${{ steps.release.outputs.release_created }}
+    environment: production
     needs: build
     runs-on: ubuntu-latest
     steps:
