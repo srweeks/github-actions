@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/srweeks/github-actions/compare/v1.2.0...v1.3.0) (2022-10-05)
+
+
+### Features
+
+* test 6 ([ee5010d](https://github.com/srweeks/github-actions/commit/ee5010d96fc795141e5460748fe11fce62e92e23))
+
 ## [1.2.0](https://github.com/srweeks/github-actions/compare/v1.1.0...v1.2.0) (2022-10-05)
 
 
