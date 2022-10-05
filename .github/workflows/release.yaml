@@ -21,6 +21,7 @@ jobs:
 
   deploy:   
     needs: build
+    environment: production
     runs-on: ubuntu-latest
     steps:
     - name: Download build artifact
