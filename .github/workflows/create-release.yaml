@@ -8,9 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: google-github-actions/release-please-action@v3
         id: release 
         with:
           release-type: node
-          package-name: release-please-action
-          token: ${{secrets.GH_REPO_ACCESS}}
+          package-name: amplience-developer-portal
