@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   generate-new-tag:
+    environment: production
     runs-on: ubuntu-latest
 
     steps:

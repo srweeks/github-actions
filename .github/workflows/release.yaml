@@ -1,8 +1,7 @@
 name: Release
 on:
   release:
-    types:
-      - published
+    types: [published]
 jobs:
   build:  
     needs: create-release
@@ -21,8 +20,7 @@ jobs:
           name: archive
           path: build/
 
-  deploy:  
-    environment: production
+  deploy:   
     needs: build
     runs-on: ubuntu-latest
     steps:
