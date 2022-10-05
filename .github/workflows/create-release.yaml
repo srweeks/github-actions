@@ -4,8 +4,7 @@ on:
     branches:
       - main
 jobs:
-  generate-new-tag:
-    environment: production
+  generate-new-tag: 
     runs-on: ubuntu-latest
 
     steps:
