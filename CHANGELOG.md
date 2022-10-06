@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.11](https://github.com/srweeks/github-actions/compare/v2.0.10...v2.0.11) (2022-10-06)
+
+
+### Bug Fixes
+
+* remove prebuilt to allow webhook to work x2 ([2cdc0f1](https://github.com/srweeks/github-actions/commit/2cdc0f17bfd1e0cf27aca14550feb767eda2ce32))
+
 ## [2.0.10](https://github.com/srweeks/github-actions/compare/v2.0.9...v2.0.10) (2022-10-06)
 
 
