@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.2](https://github.com/srweeks/github-actions/compare/v2.0.1...v2.0.2) (2022-10-05)
+
+
+### Bug Fixes
+
+* test 13 ([8a20e29](https://github.com/srweeks/github-actions/commit/8a20e29a69af8c0da23d93005ca2d244baee179b))
+* test 14 ([b11be23](https://github.com/srweeks/github-actions/commit/b11be23c88a0c460408fa73a55019f3f1bf829bd))
+* test 15 ([446796f](https://github.com/srweeks/github-actions/commit/446796ff7108285b9351e31aba19ccc28daa16e2))
+* test 16 ([7ad492f](https://github.com/srweeks/github-actions/commit/7ad492f1bb31e9e3d5375ec0e237f52966304174))
+* test 17 ([06a9f3b](https://github.com/srweeks/github-actions/commit/06a9f3bb8be4c1be5508ae3d663683fc7bff334a))
+* test 18 ([2495796](https://github.com/srweeks/github-actions/commit/249579673cf16779d9a26cf112bd7d0ef640c830))
+
 ## [2.0.1](https://github.com/srweeks/github-actions/compare/v2.0.0...v2.0.1) (2022-10-05)
 
 
