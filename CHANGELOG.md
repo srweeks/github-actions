@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.8](https://github.com/srweeks/github-actions/compare/v2.0.7...v2.0.8) (2022-10-06)
+
+
+### Bug Fixes
+
+* test 26 ([85d3d21](https://github.com/srweeks/github-actions/commit/85d3d218cfdad736a1e8bc927c4007ae1f468907))
+
 ## [2.0.7](https://github.com/srweeks/github-actions/compare/v2.0.6...v2.0.7) (2022-10-06)
 
 
