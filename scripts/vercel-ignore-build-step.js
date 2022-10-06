@@ -1,6 +1,6 @@
 if (process.env.VERCEL_ENV === 'production') {
   console.log('🛑 - Build cancelled')
-  return 0;
-}
+  return process.exit(0);
+} 
 
-return 1;
+process.exit(1);
