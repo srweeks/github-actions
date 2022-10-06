@@ -2,9 +2,7 @@ name: Create Release
 on:
   push: 
     branches:
-      - main
-env:
-  GITHUB_TOKEN: ${{ secrets.GH_REPO_ACCESS }}
+      - main 
 jobs:
   generate-new-tag: 
     runs-on: ubuntu-latest
@@ -14,3 +12,4 @@ jobs:
         with:
           release-type: node
           package-name: amplience-developer-portal
+          token:  ${{ secrets.GH_REPO_ACCESS }}
