@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.2](https://github.com/srweeks/github-actions/compare/v2.3.1...v2.3.2) (2022-10-07)
+
+
+### Bug Fixes
+
+* test 30 ([379e3fa](https://github.com/srweeks/github-actions/commit/379e3fab87907fa78a6d36878447e1b1e12798a6))
+
 ## [2.3.1](https://github.com/srweeks/github-actions/compare/v2.3.0...v2.3.1) (2022-10-07)
 
 
