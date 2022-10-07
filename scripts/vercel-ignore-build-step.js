@@ -12,7 +12,7 @@ const req = https.request(
     path: `/v6/now/deployments?limit=5&teamId=${process.env.VERCEL_IGNORE_BUILD_STEP_TEAM_ID}`,
     method: "GET",
     headers: {
-      Authorization: `Bearer ${process.env.VERCEL_IGNORE_BUILD_STEP_ACCESS_TOKEM}`,
+      Authorization: `Bearer ${process.env.VERCEL_IGNORE_BUILD_STEP_ACCESS_TOKEN}`,
     },
   },
   (res) => {
@@ -26,7 +26,7 @@ const req = https.request(
       let prodRunningFromDeployHook = false;
 
       try {
-        prodRunningFromDeployHook = parsedData.deployments.find(
+        prodRunningFromDeployHook = parsedData?.deployments?.find(
           ({ state, meta, target }) =>
             state === "BUILDING" &&
             target === "production" &&
@@ -38,13 +38,12 @@ const req = https.request(
         process.exit(0);
       }
 
-      if (!prodRunningFromDeployHook) {
-        console.log("🛑 - Build cancelled");
-        process.exit(0);
+      if (prodRunningFromDeployHook) {
+        console.log("✅ - Build can proceed");
+        process.exit(1);
       }
-
-      console.log("✅ - Build can proceed");
-      process.exit(1);
+      console.log("🛑 - Build cancelled");
+      process.exit(0);
     });
   }
 );
