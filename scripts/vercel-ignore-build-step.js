@@ -41,9 +41,10 @@ const req = https.request(
       if (prodRunningFromDeployHook) {
         console.log("✅ - Build can proceed");
         process.exit(1);
+      } else {
+        console.log("🛑 - Build cancelled");
+        process.exit(0);
       }
-      console.log("🛑 - Build cancelled");
-      process.exit(0);
     });
   }
 );
