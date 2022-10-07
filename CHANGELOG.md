@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.15](https://github.com/srweeks/github-actions/compare/v2.0.14...v2.0.15) (2022-10-07)
+
+
+### Bug Fixes
+
+* maybe allows deploy hook trigger to build prod x2 ([ad49148](https://github.com/srweeks/github-actions/commit/ad49148a84cabe29b90dd4a851c57b45f2300301))
+
 ## [2.0.14](https://github.com/srweeks/github-actions/compare/v2.0.13...v2.0.14) (2022-10-07)
 
 
