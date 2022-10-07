@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/srweeks/github-actions/compare/v2.1.0...v2.2.0) (2022-10-07)
+
+
+### Features
+
+* production build ignore only when not a deploy hook triggered build x2 ([a75dacf](https://github.com/srweeks/github-actions/commit/a75dacff59852b8bffff28f072ff79686cf0543d))
+
 ## [2.1.0](https://github.com/srweeks/github-actions/compare/v2.0.15...v2.1.0) (2022-10-07)
 
 
