@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/srweeks/github-actions/compare/v2.3.3...v2.4.0) (2022-10-10)
+
+
+### Features
+
+* test 31 - deploy hook ([8e42900](https://github.com/srweeks/github-actions/commit/8e429000b31a152aa92a502360912fa9f6de6573))
+
 ## [2.3.3](https://github.com/srweeks/github-actions/compare/v2.3.2...v2.3.3) (2022-10-07)
 
 
